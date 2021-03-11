@@ -60,3 +60,25 @@ for i in range(T):
 
 # 백준 2438번
 
+N = int(input())
+
+for i in range(1,N+1):
+    print('*'* i) 
+
+# 백준 2439번
+
+N = int(input())
+
+for i in range(1,N+1):
+    print(" "*(N-i) + '*'* i)   #" "*(N-i) 을 통해 오른쪽으로 별을 밀어서 쓴다.
+
+# 백준 10871번
+
+import sys
+
+N, X = map(int, sys.stdin.readline().split())
+A = list(map(int, input().split()))
+
+for i in range(N):
+    if A[i] < X:
+        print(A[i], end=" ")

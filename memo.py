@@ -1,6 +1,8 @@
-N = int(input())
+import sys
 
-for i in range()
-    i += 1          
-    if i > 5: break 
-    print('*'* i) 
+while True:
+    try:
+        A, B = map(int, sys.stdin.readline().split())
+        print(A+B)
+    except:
+        break   
