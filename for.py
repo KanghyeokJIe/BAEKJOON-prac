@@ -39,3 +39,24 @@ N = int(input())
 
 for i in range(1, N+1):
     print(i)
+
+# 백준 11021번
+
+import sys
+T = int(input())
+
+for i in range(T):
+    A, B = map(int, sys.stdin.readline().split())
+    print("Case #{}: {}".format(i+1,A+B))
+
+# 백준 11022번
+
+import sys
+T = int(input())
+
+for i in range(T):
+    A, B = map(int, sys.stdin.readline().split())
+    print("Case #{}: {} + {} = {}".format(i+1,A,B,A+B))
+
+# 백준 2438번
+
