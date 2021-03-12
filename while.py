@@ -18,3 +18,19 @@ while True:
         print(A+B)
     except:
         break 
+
+# 백준 1110번 
+
+N = int(input())
+clear = N
+N2 = 0
+A = 0
+count = 0
+while True:
+    A = N // 10 + N % 10
+    N2 = (N % 10) * 10 + A % 10
+    count += 1
+    N = N2
+    if N2 == clear:
+        break
+print(count)
