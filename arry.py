@@ -51,3 +51,32 @@ print('{}'.format(avg))
 
 # 백준 8958번
 
+n = int(input())
+
+for i in range(n):
+    case = str(input())
+    score = 0
+    _count = 0
+    for j in list(case):
+        if j == "O":
+            _count += 1
+            score += _count
+        elif j == "X":
+            _count = 0
+
+    print(score)
+
+# 백준 4344번
+
+c = int(input())
+
+for i in range(c):
+    result = list(map(int, input().split()))
+    avg = sum(result[1:]) / result[0]
+    count = 0
+    for score in result[1:]:
+        if score > avg:
+            count += 1
+    rate = count / result[0] * 100
+
+    print(str('%.3f' % round(count / result[0] * 100, 3)) + '%')
